@@ -64,6 +64,8 @@ void rst_sh5(defender_t *defender)
         defender->count18 = 0;
         defender->count19 = 0;
         defender->count20 = 0;
+        if (defender->count_zik5 == 0)
+            defender->count_zik5 = 1;
         defender->trigger5 = 2;
         defender->stop_shotx5 = 0;
         defender->stop_shoty5 = 0;

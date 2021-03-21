@@ -92,7 +92,7 @@ void position4(defender_t *defender)
     defender->origin_shot2.x = 73;
     defender->origin_shot2.y = 46;
     defender->pos_htp.x = 1810;
-    defender->pos_htp.y = 980;
+    defender->pos_htp.y = 880;
     position5(defender);
 }
 

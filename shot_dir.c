@@ -93,6 +93,8 @@ void call_shdir1(defender_t *defender)
         defender->pos2 = (defender->pos_shot.x + defender->dx4);
         defender->pos3 = (defender->pos_shot.y + defender->dy4);
         defender->pos4 = (defender->pos_shot.y - defender->dy4);
+        if (defender->count_zik1 == 0)
+            defender->count_zik1 = 1;
         defender->trigger = 1;
     }
 }

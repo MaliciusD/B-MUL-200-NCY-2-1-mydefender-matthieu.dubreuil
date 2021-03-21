@@ -35,26 +35,46 @@ int my_putstr(char const *str);
 void sprite(defender_t *defender);
 void sprite2(defender_t *defender);
 void sprite3(defender_t *defender);
+void sprite4(defender_t *defender);
+void sprite5(defender_t *defender);
 void texture(defender_t *defender);
 void texture2(defender_t *defender);
 void texture3(defender_t *defender);
+void texture4(defender_t *defender);
+void texture5(defender_t *defender);
 void set_texture(defender_t *defender);
 void set_texture2(defender_t *defender);
+void set_texture4(defender_t *defender);
+void set_texture6(defender_t *defender);
 void set_position(defender_t *defender);
 void set_position2(defender_t *defender);
+void set_position5(defender_t *defender);
 void position(defender_t *defender);
 void position2(defender_t *defender);
 void position3(defender_t *defender);
 void position4(defender_t *defender);
+void position7(defender_t *defender);
+void position8(defender_t *defender);
 void game_loop(defender_t *defender);
+void call2(defender_t *defender);
 void menu(defender_t *defender);
 void menu2(defender_t *defender);
+void menu3(defender_t *defender);
+void menu4(defender_t *defender);
+void menu5(defender_t *defender);
+void menu6(defender_t *defender);
+void menu7(defender_t *defender);
+void menu8(defender_t *defender);
 void button(defender_t *defender);
 void button2(defender_t *defender);
 void button3(defender_t *defender);
 void button4(defender_t *defender);
 void button5(defender_t *defender);
 void button6(defender_t *defender);
+void button7(defender_t *defender);
+void button8(defender_t *defender);
+void button9(defender_t *defender);
+void button10(defender_t *defender);
 void build(defender_t *defender);
 void build(defender_t *defender);
 void tower(defender_t *defender);
@@ -64,11 +84,37 @@ void tower4(defender_t *defender);
 void tower5(defender_t *defender);
 void tower6(defender_t *defender);
 void tower7(defender_t *defender);
+void tower8(defender_t *defender);
+void tower9(defender_t *defender);
+void tower10(defender_t *defender);
+void tower11(defender_t *defender);
+void tower12(defender_t *defender);
+void tower13(defender_t *defender);
+void tower14(defender_t *defender);
+void tower15(defender_t *defender);
+void tower16(defender_t *defender);
+void tower17(defender_t *defender);
+void tower18(defender_t *defender);
+void tower19(defender_t *defender);
+void tower20(defender_t *defender);
+void tower21(defender_t *defender);
+void tower22(defender_t *defender);
+void tower23(defender_t *defender);
+void tower24(defender_t *defender);
+void tower25(defender_t *defender);
+void tower26(defender_t *defender);
+void tower27(defender_t *defender);
+void tower28(defender_t *defender);
+void call_path5(defender_t *defender);
+void call_path6(defender_t *defender);
+void call_path7(defender_t *defender);
+void call_path8(defender_t *defender);
 void call_path4(defender_t *defender);
 void call_path3(defender_t *defender);
 void call_path2(defender_t *defender);
 void call_path1(defender_t *defender);
 void enemy_path(defender_t *defender);
+char *my_getnbrinverse(int tmp, int k, int trans, int is_neg);
 void paus(defender_t *defender);
 void vie(defender_t *defender);
 void call_sh4(defender_t *defender);
@@ -132,6 +178,56 @@ void enemy_shot5(defender_t *defender);
 void enemy_shot6(defender_t *defender);
 void enemy_shot7(defender_t *defender);
 void animation1(defender_t *defender);
-
+void animation4(defender_t *defender);
+void set_position4(defender_t *defender);
+void set_texture5(defender_t *defender);
+void animation3(defender_t *defender);
+void animation2(defender_t *defender);
+void draw_grass_second(defender_t *defender);
+void second_clock(defender_t *defender);
+void cond_third(defender_t *defender);
+void set_texture_rect(defender_t *defender);
+void music2(defender_t *defender);
+void music(defender_t *defender);
+void create_music_fromfile(defender_t *defender);
+void enemy_shot8(defender_t *defender);
+void enemy_shot9(defender_t *defender);
+void enemy_shot10(defender_t *defender);
+void enemy_shot11(defender_t *defender);
+void enemy_shot12(defender_t *defender);
+void enemy_shot13(defender_t *defender);
+void enemy_shot14(defender_t *defender);
+void enemy_shot15(defender_t *defender);
+void check_hit(defender_t *defender, sfVector2f pos_sprite1,
+sfVector2f pos_sprite2, int zbi);
+void check_hit2(defender_t *defender, sfVector2f pos_sprite1,
+sfVector2f pos_sprite2, int zbi);
+void check_hit3(defender_t *defender, sfVector2f pos_sprite1,
+sfVector2f pos_sprite2, int zbi);
+void check_hit4(defender_t *defender, sfVector2f pos_sprite1,
+sfVector2f pos_sprite2, int zbi);
+void check_hit5(defender_t *defender, sfVector2f pos_sprite1,
+sfVector2f pos_sprite2, int zbi);
+void check_hit6(defender_t *defender, sfVector2f pos_sprite1,
+sfVector2f pos_sprite2, int zbi);
+void check_hit7(defender_t *defender, sfVector2f pos_sprite1,
+sfVector2f pos_sprite2, int zbi);
+void check_hit8(defender_t *defender, sfVector2f pos_sprite1,
+sfVector2f pos_sprite2, int zbi);
+void check_hit9(defender_t *defender, sfVector2f pos_sprite1,
+sfVector2f pos_sprite2, int zbi);
+void check_hit10(defender_t *defender, sfVector2f pos_sprite1,
+sfVector2f pos_sprite2, int zbi);
+void check_hit11(defender_t *defender, sfVector2f pos_sprite1,
+sfVector2f pos_sprite2, int zbi);
+void check_hit12(defender_t *defender, sfVector2f pos_sprite1,
+sfVector2f pos_sprite2, int zbi);
+void check_hit13(defender_t *defender, sfVector2f pos_sprite1,
+sfVector2f pos_sprite2, int zbi);
+void check_hit14(defender_t *defender, sfVector2f pos_sprite1,
+sfVector2f pos_sprite2, int zbi);
+char *my_revstr(char *str);
+void position10(defender_t *defender);
+void win_cond(defender_t *defender);
 
 #endif

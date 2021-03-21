@@ -25,6 +25,11 @@ void set_texture3(defender_t *defender)
     sfSprite_setTexture(defender->shot5, defender->text_shot5, sfTrue);
     sfSprite_setTexture(defender->shot6, defender->text_shot6, sfTrue);
     sfSprite_setTexture(defender->shot7, defender->text_shot7, sfTrue);
+    sfSprite_setTexture(defender->tesla1, defender->text_tesla1, sfTrue);
+    sfSprite_setTexture(defender->tesla2, defender->text_tesla2, sfTrue);
+    sfSprite_setTexture(defender->tesla3, defender->text_tesla3, sfTrue);
+    sfSprite_setTexture(defender->tesla4, defender->text_tesla4, sfTrue);
+    set_texture4(defender);
 }
 
 void set_position(defender_t *defender)
@@ -83,6 +88,17 @@ void sprite3(defender_t *defender)
     defender->shot5 = sfSprite_create();
     defender->shot6 = sfSprite_create();
     defender->shot7 = sfSprite_create();
+    defender->tesla1 = sfSprite_create();
+    defender->tesla2 = sfSprite_create();
+    defender->tesla3 = sfSprite_create();
+    defender->tesla4 = sfSprite_create();
+    defender->tesla5 = sfSprite_create();
+    defender->tesla6 = sfSprite_create();
+    defender->tesla7 = sfSprite_create();
+    defender->slow1 = sfSprite_create();
+    defender->slow2 = sfSprite_create();
+    defender->slow3 = sfSprite_create();
+    sprite4(defender);
 }
 
 void texture3(defender_t *defender)
@@ -94,4 +110,17 @@ void texture3(defender_t *defender)
     defender->text_shot5 = sfTexture_createFromFile("tools/shotani.png", NULL);
     defender->text_shot6 = sfTexture_createFromFile("tools/shotani.png", NULL);
     defender->text_shot7 = sfTexture_createFromFile("tools/shotani.png", NULL);
+    defender->text_tesla1 = sfTexture_createFromFile("tools/tesla.png", NULL);
+    defender->text_tesla2 = sfTexture_createFromFile("tools/tesla.png", NULL);
+    defender->text_tesla3 = sfTexture_createFromFile("tools/tesla.png", NULL);
+    defender->text_tesla4 = sfTexture_createFromFile("tools/tesla.png", NULL);
+    defender->text_tesla5 = sfTexture_createFromFile("tools/tesla.png", NULL);
+    defender->text_tesla6 = sfTexture_createFromFile("tools/tesla.png", NULL);
+    defender->text_tesla7 = sfTexture_createFromFile("tools/tesla.png", NULL);
+    defender->text_slow1 = sfTexture_createFromFile("tools/slow.png", NULL);
+    defender->text_slow2 = sfTexture_createFromFile("tools/slow.png", NULL);
+    defender->text_slow3 = sfTexture_createFromFile("tools/slow.png", NULL);
+    defender->text_slow4 = sfTexture_createFromFile("tools/slow.png", NULL);
+    defender->text_slow5 = sfTexture_createFromFile("tools/slow.png", NULL);
+    texture4(defender);
 }

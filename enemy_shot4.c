@@ -64,6 +64,8 @@ void rst_sh4(defender_t *defender)
         defender->count14 = 0;
         defender->count15 = 0;
         defender->count16 = 0;
+        if (defender->count_zik4 == 0)
+            defender->count_zik4 = 1;
         defender->trigger4 = 2;
         defender->stop_shotx4 = 0;
         defender->stop_shoty4 = 0;

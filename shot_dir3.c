@@ -96,3 +96,17 @@ void call_shdir9(defender_t *defender)
         defender->trigger5 = 1;
     }
 }
+
+void call2(defender_t *defender)
+{
+    defender->pos_text.y = -25;
+    sfText_setFont(defender->scoros, defender->font);
+    sfText_setPosition(defender->scoros, defender->pos_text);
+    set_texture(defender);
+    sfMusic_play(defender->loop);
+    defender->enemy_life = 3;
+    defender->enemy_life2 = 3;
+    defender->count_path2 = -1;
+    defender->gold = 200;
+    game_loop(defender);
+}

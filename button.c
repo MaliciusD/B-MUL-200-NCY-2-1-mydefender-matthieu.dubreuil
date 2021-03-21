@@ -96,7 +96,7 @@ void button5(defender_t *defender)
 {
     if (sfMouse_isButtonPressed(sfMouseLeft) == 1) {
         if (defender->pos_ms.x >= 1810 && defender->pos_ms.x <= 1920
-        && defender->pos_ms.y >= 980
+        && defender->pos_ms.y >= 880
         && defender->pos_ms.y <= 1080)
             defender->count_menu = 4;
     }

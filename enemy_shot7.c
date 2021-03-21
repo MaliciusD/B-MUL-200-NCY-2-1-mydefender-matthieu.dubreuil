@@ -64,6 +64,8 @@ void rst_sh7(defender_t *defender)
         defender->count26 = 0;
         defender->count27 = 0;
         defender->count28 = 0;
+        if (defender->count_zik7 == 0)
+            defender->count_zik7 = 1;
         defender->trigger7 = 2;
         defender->stop_shotx7 = 0;
         defender->stop_shoty7 = 0;

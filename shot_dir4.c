@@ -52,3 +52,62 @@ void call_shdir13(defender_t *defender)
         defender->trigger7 = 1;
     }
 }
+
+void enemy_shot8(defender_t *defender)
+{
+    if ((defender->pos_shot5.x >= 1920 && defender->trigger5 == 3) ||
+    (defender->pos_shot5.x <= 0 &&
+    defender->trigger5 == 3) || (defender->pos_shot5.y >= 1080 &&
+    defender->trigger5 == 3) || (defender->pos_shot5.y <= 0 &&
+    defender->trigger5 == 3)) {
+        defender->pos_shot5.x = 1130;
+        defender->pos_shot5.y = 600;
+        defender->count17 = 0;
+        defender->count18 = 0;
+        defender->count19 = 0;
+        defender->count20 = 0;
+        if (defender->count_zik5 == 0)
+            defender->count_zik5 = 1;
+        defender->trigger5 = 2;
+        defender->stop_shotx5 = 0;
+        defender->stop_shoty5 = 0;
+        }
+}
+
+void enemy_shot9(defender_t *defender)
+{
+    if ((defender->pos_shot4.x >= 1920 && defender->trigger4 == 3) ||
+    (defender->pos_shot4.x <= 0 &&
+    defender->trigger4 == 3) || (defender->pos_shot4.y >= 1080 &&
+    defender->trigger4 == 3) || (defender->pos_shot4.y <= 0 &&
+    defender->trigger4 == 3)) { defender->pos_shot4.x = 485;
+        defender->pos_shot4.y = 800;
+        defender->count13 = 0;
+        defender->count14 = 0;
+        defender->count15 = 0;
+        defender->count16 = 0;
+        if (defender->count_zik4 == 0)
+            defender->count_zik4 = 1;
+        defender->trigger4 = 2;
+        defender->stop_shotx4 = 0;
+        defender->stop_shoty4 = 0; }
+}
+
+void enemy_shot13(defender_t *defender)
+{
+    if ((defender->pos_shot.x >= 1920 && defender->trigger == 3) ||
+    (defender->pos_shot.x <= 0 && defender->trigger == 3) ||
+    (defender->pos_shot.y >= 1080 && defender->trigger == 3) ||
+    (defender->pos_shot.y <= 0 && defender->trigger == 3)) {
+        defender->pos_shot.x = 485;
+        defender->pos_shot.y = 270;
+        defender->count = 0;
+        defender->count2 = 0;
+        defender->count3 = 0;
+        defender->count4 = 0;
+        defender->stop_shotx = 0;
+        defender->stop_shoty = 0;
+        if (defender->count_zik1 == 0)
+            defender->count_zik1 = 1;
+        defender->trigger = 2; }
+}

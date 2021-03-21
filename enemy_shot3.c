@@ -64,6 +64,8 @@ void rst_sh3(defender_t *defender)
         defender->count10 = 0;
         defender->count11 = 0;
         defender->count12 = 0;
+        if (defender->count_zik3 == 0)
+            defender->count_zik3 = 1;
         defender->trigger3 = 2;
         defender->stop_shotx3 = 0;
         defender->stop_shoty3 = 0;

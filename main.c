@@ -8,6 +8,37 @@
 #include "include/my.h"
 #include "include/struct.h"
 
+void close_music2(defender_t *defender)
+{
+    sfMusic_destroy(defender->sws_sound5);
+    sfMusic_destroy(defender->sws_sound6);
+    sfMusic_destroy(defender->sws_sound7);
+}
+
+void close_music(defender_t *defender)
+{
+    sfMusic_destroy(defender->loop);
+    sfMusic_destroy(defender->tower_sound);
+    sfMusic_destroy(defender->tower_sound2);
+    sfMusic_destroy(defender->tower_sound3);
+    sfMusic_destroy(defender->tower_sound4);
+    sfMusic_destroy(defender->tower_sound5);
+    sfMusic_destroy(defender->tower_sound6);
+    sfMusic_destroy(defender->tower_sound7);
+    sfMusic_destroy(defender->ts_sound);
+    sfMusic_destroy(defender->ts_sound2);
+    sfMusic_destroy(defender->ts_sound3);
+    sfMusic_destroy(defender->ts_sound4);
+    sfMusic_destroy(defender->ts_sound5);
+    sfMusic_destroy(defender->ts_sound6);
+    sfMusic_destroy(defender->ts_sound7);
+    sfMusic_destroy(defender->sws_sound);
+    sfMusic_destroy(defender->sws_sound2);
+    sfMusic_destroy(defender->sws_sound3);
+    sfMusic_destroy(defender->sws_sound4);
+    close_music2(defender);
+}
+
 void description(void)
 {
     my_putstr("my_defender in CSFML\n");
@@ -33,8 +64,12 @@ void call(defender_t *defender)
     sfSprite_setScale(defender->shot5, (sfVector2f) {0.5, 0.5});
     sfSprite_setScale(defender->shot6, (sfVector2f) {0.5, 0.5});
     sfSprite_setScale(defender->shot7, (sfVector2f) {0.5, 0.5});
-    set_texture(defender);
-    game_loop(defender);
+    sfSprite_setScale(defender->up, (sfVector2f) {0.6, 0.6});
+    sfSprite_setScale(defender->coin, (sfVector2f) {0.8, 0.8});
+    defender->scoros = sfText_create();
+    defender->font = sfFont_createFromFile("tools/bunny.ttf");
+    defender->pos_text.x = 500;
+    call2(defender);
 }
 
 int main(int argc, char **argv)
@@ -49,4 +84,5 @@ int main(int argc, char **argv)
     defender->window = sfRenderWindow_create(mode, "My_defender", sfResize |
     sfClose, NULL);
     call(defender);
+    close_music(defender);
 }
